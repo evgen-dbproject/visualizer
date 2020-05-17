@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gradient/gradient.css">
+  <title>Visualizer</title>
+</head>
+<body>
+  <div id="left-side">
+    <div class="controls">
+      <h2>Управление:</h2>
+      <div id="buttons">
+        <input class="control" id="start" type="reset" value="Запустить" onclick="start(true)">
+        <input class="control" id="stop" type="reset" value="Остановить" onclick="stop(true)">
+      </div>
+    </div>
+
+    <div class="parametrs">
+      <h2>Параметры:</h2>
+      <div class="param" id="shape">
+        Количество углов:
+        <input class="value" id="shapeV" type="range" min="0" max="360" step="1" value="100">
+      </div>
+      <div class="param" id="lineWidth">
+        Толщина линий:
+        <input class="value" id="lineWidthV" type="range" min="0" max="10" step="1" value="1">
+      </div>
+      <div class="param" id="spread">
+        Интенсивность:
+        <input class="value" id="spreadV" type="range" min="1" max="70" step="1" value="10">
+      </div>
+      <div class="param" id="damping">
+        Снижение интенсивности:
+        <input class="value" id="dampingV" type="range" min="0.005" max="0.5" step="0.001" value="0.005">
+      </div>
+      <div class="param" id="Gradient">
+        Градиент:
+        <div class="gradient-container value">
+          <div class="gradient dispColor" id="from"></div>
+          <div class="gradient" id="gradient"></div>
+          <div class="gradient dispColor" id="to"></div>
+        </div>
+      </div>
+      <div class="param" id="gradientSpeed">
+        Изменение градиента:
+        <input class="value" id="gradientSpeedV" type="range" min="1" max="5" step="0.01" value="0.1">
+      </div>
+      <div class="param" id="lineConnect">
+        Соединять линии:
+        <input type="checkbox" class="value" id="lineConnectV" name="lineConnect">
+      </div>
+    </div>
+  </div>
+  <script src="dist/vanilla-picker.js"></script>
+  <script src="gradient/gradient.js" charset="utf-8"></script>
+  <div id="right-side">
+    <canvas id="canvas"></canvas>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>

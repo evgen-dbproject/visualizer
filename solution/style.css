@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+  font-size: 25px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  color: rgb(220, 220, 220);
+}
+
+/* Canvas styles */
+canvas {
+  position: absolute;
+  right: 20px;
+}
+
+#canvas {
+  background-color: black;
+  border-radius: 3px;
+  border: 3px solid rgb(50,50,50);
+}
+
+/* Controls styles */
+.controls {
+  background-color: rgb(100, 100, 100);
+  border-radius: 8px;
+  border: 3px solid rgb(100, 100, 100);
+  padding: 0px 20px 20px 20px;
+  margin: 5px;
+}
+
+#buttons {
+  margin-left: 35px;
+}
+
+.control {
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 3px;
+  border-color: rgb(200, 200, 200);
+  border: 1px solid;
+  text-decoration: none;
+  margin: 0 0 0 5px;
+  padding: 0 10px 0 10px;
+  height: 50px;
+  background-color: rgb(100, 100, 100);
+  color: rgb(200, 200, 200);
+}
+
+.control:hover {
+	background-color: rgb(180, 180, 180);
+  color: rgb(80, 80, 80);
+}
+
+/* Parametrs styles */
+.parametrs {
+  background-color: rgb(100, 100, 100);
+  border-radius: 8px;
+  border: 3px solid rgb(100, 100, 100);
+  padding: 0px 20px 20px 20px;
+  margin: 5px;
+}
+
+.param {
+  margin: 10px 0 10px 0;
+  margin-left: 25px;
+  padding-left: 10px;
+  height: 40px;
+  color: rgb(200, 200, 200);
+  border-bottom: 1px solid rgba(50, 50, 50, 0.7);
+}
+
+.value {
+  float: right;
+  font-size: 20px;
+  width: 230px;
+}
+
+#lineConnectV {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  margin: 10px 0 0 0;
+  padding: 0;
+
+}
+
+#gradient-container {
+  margin: 0;
+  padding: 0;
+}
